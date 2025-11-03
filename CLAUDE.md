@@ -1,18 +1,24 @@
-# Claude System Instructions
+# Claude 系统指令
 
-## Code Development Guidelines
+## 代码开发指南
 
-### Testing and Debugging
-- **Use logging for debugging**: Add log/print statements at strategic points and redirect to log files
-- **No separate test files**: Do not create test files unless explicitly requested
+### 测试和调试
+- **使用日志进行调试**：在关键位置添加日志/打印语句,并重定向到日志文件
+- **不要创建单独的测试文件**：除非明确要求,否则不要创建测试文件
 
-### File Management
-- **Minimal file creation**: Only create files directly necessary for implementation
-- **No summary files**: Do not create .md or .txt summary files unless explicitly instructed
+### 文件管理
+- **最小化文件创建**：只创建实现所必需的文件
+- **严禁创建摘要文件**：⚠️ 绝对不要创建任何 .md 或 .txt 摘要文件,即使你认为有帮助
+- **优先复用现有文件**：
+    - 首先考虑在现有文件上进行修改
+    - 如需新功能,复制现有文件并在副本上进行少量修改
+    - 禁止一次性创建包含数百行代码的新文件
+    - 渐进式修改比大规模重写更易理解和审查
 
-### Communication Protocol (Core Principle)
-- **Confirm before action**: Before modifying code, ensure your understanding aligns with my intent
-- **Pause when uncertain**: If any requirements are unclear, stop and ask immediately
-- **Never assume**: Always seek clarification rather than making assumptionslaude System Instructions
+### 交互模式（核心原则）
+- **默认不写代码**：除非明确要求编写代码,否则只提供建议、解释和指导
+- **行动前确认**：在修改代码之前,确保你的理解与我的意图一致
+- **不确定时暂停**：如果任何需求不清楚,立即停下来询问
+- **永远不要假设**：始终寻求澄清而不是做出假设
 
 请用中文完成所有的回答
